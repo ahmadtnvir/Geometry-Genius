@@ -1,6 +1,7 @@
 function triangleAreaCalculate() {
     const getBaseInput = document.getElementById('get-base-input');
     const getHeightInput = document.getElementById('get-height-input');
+    const pushTriangleArea = document.getElementById('triangle-area');
 
     const getBaseInputValue = getBaseInput.value;
     const getHeightInputValue = getHeightInput.value;
@@ -11,5 +12,6 @@ function triangleAreaCalculate() {
     const getHeightHeightValueInNumber = parseFloat(getHeightInputValue); //* using parseFloat because of value can be fraction number(1.5) 
 
     const totalArea = 0.5 * getBaseInputValueInNumber * getHeightHeightValueInNumber;
-    console.log(totalArea);
+    // console.log(totalArea);
+    pushTriangleArea.innerText = totalArea;
 }
