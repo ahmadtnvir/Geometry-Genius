@@ -24,10 +24,10 @@
       }
     </style>
   </head>
-  <body class="font">
+  <body class="font m-8">
     <header></header>
     <main>
-      <div class="flex flex-col md:flex-row">
+      <div class="flex gap-3 flex-col md:flex-row">
         <!-- *------- >>> Card container <<< ----------->
 
         <div
@@ -63,6 +63,156 @@
               </div>
             </div>
           </div>
+
+          <!-- *____________ Rectangle ______________ -->
+          <div class="card bg-base-100 shadow-xl space-y-6">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/rectangle.png"
+                alt="Rectangle"
+              />
+            </figure>
+            <div class="card-body items-center text-center space-y-3">
+              <h2 class="card-title text-2xl font-bold text-[#414141]">Rectangle</h2>
+              <p class="text-[#414141]">Area(A) = w X l</p>
+              <div class="flex">
+                <div class="flex-1">
+                  <input id="get-width-input" class="w-[50%] py-2 px-3 text-[#414141] rounded-lg" type="text" placeholder="w" />
+                  <span class="ml-2 text-[#414141]">cm</span>
+                </div>
+                <div class="flex-1">
+                  <input id="get-length-input" class="w-[50%] py-2 px-3 text-[#414141] rounded-lg" type="text" placeholder="l" />
+                  <span class="ml-2 text-[#414141]">cm</span>
+                </div>
+              </div>
+              <div>
+                <p class="text-[#414141] text-xl font-medium">Area: <span id="rectangle-area"></span> <span>cm<sup>2</sup></span></p>
+              </div>
+              <div class="card-actions w-full">
+                <button class="btn bg-[#1090D8] w-full text-xl font-bold text-[#FFFFFF]" onclick="rectangleAreaCalculate()">Calculate</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- *_____________ Parallelogram ______________ -->
+          <div class="card bg-base-100 shadow-xl space-y-6">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/parallelogram.png"
+                alt="Triangle"
+              />
+            </figure>
+            <div class="card-body items-center text-center space-y-3">
+              <h2 class="card-title text-2xl font-bold text-[#414141]">Triangle</h2>
+              <p class="text-[#414141]">Area(A) = 0.5 X b X h</p>
+              <div class="flex">
+                <div class="flex-1">
+                  <input id="get-base-input" class="w-[50%] py-2 px-3 text-[#414141] rounded-lg" type="text" placeholder="b" />
+                  <span class="ml-2 text-[#414141]">cm</span>
+                </div>
+                <div class="flex-1">
+                  <input id="get-height-input" class="w-[50%] py-2 px-3 text-[#414141] rounded-lg" type="text" placeholder="h" />
+                  <span class="ml-2 text-[#414141]">cm</span>
+                </div>
+              </div>
+              <div>
+                <p class="text-[#414141] text-xl font-medium">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
+              </div>
+              <div class="card-actions w-full">
+                <button class="btn bg-[#1090D8] w-full text-xl font-bold text-[#FFFFFF]" onclick="triangleAreaCalculate()">Calculate</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- *______________ Rhombus_______________ -->
+          <div class="card bg-base-100 shadow-xl space-y-6">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/rhombus.png"
+                alt="Triangle"
+              />
+            </figure>
+            <div class="card-body items-center text-center space-y-3">
+              <h2 class="card-title text-2xl font-bold text-[#414141]">Triangle</h2>
+              <p class="text-[#414141]">Area(A) = 0.5 X b X h</p>
+              <div class="flex">
+                <div class="flex-1">
+                  <input id="get-base-input" class="w-[50%] py-2 px-3 text-[#414141] rounded-lg" type="text" placeholder="b" />
+                  <span class="ml-2 text-[#414141]">cm</span>
+                </div>
+                <div class="flex-1">
+                  <input id="get-height-input" class="w-[50%] py-2 px-3 text-[#414141] rounded-lg" type="text" placeholder="h" />
+                  <span class="ml-2 text-[#414141]">cm</span>
+                </div>
+              </div>
+              <div>
+                <p class="text-[#414141] text-xl font-medium">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
+              </div>
+              <div class="card-actions w-full">
+                <button class="btn bg-[#1090D8] w-full text-xl font-bold text-[#FFFFFF]" onclick="triangleAreaCalculate()">Calculate</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- *_______________ Pentagon _____________ -->
+          <div class="card bg-base-100 shadow-xl space-y-6">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/pentagon.png"
+                alt="Triangle"
+              />
+            </figure>
+            <div class="card-body items-center text-center space-y-3">
+              <h2 class="card-title text-2xl font-bold text-[#414141]">Triangle</h2>
+              <p class="text-[#414141]">Area(A) = 0.5 X b X h</p>
+              <div class="flex">
+                <div class="flex-1">
+                  <input id="get-base-input" class="w-[50%] py-2 px-3 text-[#414141] rounded-lg" type="text" placeholder="b" />
+                  <span class="ml-2 text-[#414141]">cm</span>
+                </div>
+                <div class="flex-1">
+                  <input id="get-height-input" class="w-[50%] py-2 px-3 text-[#414141] rounded-lg" type="text" placeholder="h" />
+                  <span class="ml-2 text-[#414141]">cm</span>
+                </div>
+              </div>
+              <div>
+                <p class="text-[#414141] text-xl font-medium">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
+              </div>
+              <div class="card-actions w-full">
+                <button class="btn bg-[#1090D8] w-full text-xl font-bold text-[#FFFFFF]" onclick="triangleAreaCalculate()">Calculate</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- * _______________  Ellipse_______________ -->
+          <div class="card bg-base-100 shadow-xl space-y-6">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/ellipse.png"
+                alt="Triangle"
+              />
+            </figure>
+            <div class="card-body items-center text-center space-y-3">
+              <h2 class="card-title text-2xl font-bold text-[#414141]">Triangle</h2>
+              <p class="text-[#414141]">Area(A) = 0.5 X b X h</p>
+              <div class="flex">
+                <div class="flex-1">
+                  <input id="get-base-input" class="w-[50%] py-2 px-3 text-[#414141] rounded-lg" type="text" placeholder="b" />
+                  <span class="ml-2 text-[#414141]">cm</span>
+                </div>
+                <div class="flex-1">
+                  <input id="get-height-input" class="w-[50%] py-2 px-3 text-[#414141] rounded-lg" type="text" placeholder="h" />
+                  <span class="ml-2 text-[#414141]">cm</span>
+                </div>
+              </div>
+              <div>
+                <p class="text-[#414141] text-xl font-medium">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
+              </div>
+              <div class="card-actions w-full">
+                <button class="btn bg-[#1090D8] w-full text-xl font-bold text-[#FFFFFF]" onclick="triangleAreaCalculate()">Calculate</button>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- * ------ >>> Area calculation container <<< --------->
@@ -72,6 +222,7 @@
         </div>
       </div>
     </main>
-    <script src="./scripts/triangle.calculate.js"></script>
+    <script src="./js/triangle.calculate.js"></script>
+    <script src="./js/rectangle-calculation.js"></script>
   </body>
 </html>
