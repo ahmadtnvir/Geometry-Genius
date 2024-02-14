@@ -8,6 +8,9 @@ function triangleAreaCalculate() {
     //console.log(typeof getBaseInputValue); //* output is string now.But string is not allowed. 
     //console.log(typeof getHeightInputValue); //* output is string now.But string is not allowed.
 
+    getBaseInput.value = '';
+    getHeightInput.value = '';
+
     const getBaseInputValueInNumber = parseFloat(getBaseInputValue); //* using parseFloat because of value can be fraction number(1.5) 
     const getHeightHeightValueInNumber = parseFloat(getHeightInputValue); //* using parseFloat because of value can be fraction number(1.5) 
 

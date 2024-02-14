@@ -6,6 +6,9 @@ function rectangleAreaCalculate(){
     const getWidthInputValue = getWidthInput.value;
     const getLengthInputValue = getLengthInput.value;
 
+    getWidthInput.value = '';
+    getLengthInput.value = '';
+
     const getWidthInputValueInNumber = parseFloat(getWidthInputValue);
     const getLengthInputValueInNumber = parseFloat(getLengthInputValue);
 
